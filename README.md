@@ -3,50 +3,6 @@
 
 🔍 SQL queries? Check them out here: [queries folder](/queries/)
 
-🐳 Docker compose files? Check them out here: [docker folder](/docker/)
-
-# Background
-Driven by a quest to navigate the data analyst job market more effectively, this project was born from a desire to pinpoint top-paid and in-demand skills, streamlining others work to find optimal jobs.
-
-It's packed with insights on job titles, salaries, locations, and essential skills.
-
-# Setting Up PostgreSQL and pgAdmin locally using Docker Compose
-
-To explore this project's database locally, I've provided Docker configurations for easy setup of PostgreSQL and pgAdmin. Here's how to get started:
-
-1. **Set Up Environment Variables**
-   - Navigate to the `/docker` directory
-   - Copy `.env_sample` to create your own `.env` file:
-     ```bash
-     cp .env_sample .env
-     ```
-   - Modify the `.env` file with your preferred credentials:
-     ```
-     POSTGRES_USER=your_postgres_user
-     POSTGRES_PASSWORD=your_postgres_password
-     POSTGRES_DB=your_database_name
-     PGADMIN_DEFAULT_EMAIL=your_email@example.com
-     PGADMIN_DEFAULT_PASSWORD=your_pgadmin_password
-     LOCAL_CSV_DIR=/path/to/your/csv/files
-     ```
-
-2. **Start the Services**
-   - From the `/docker` directory, run:
-     ```bash
-     docker-compose up -d
-     ```
-   This will start both PostgreSQL and pgAdmin containers in detached mode.
-
-3. **Access pgAdmin**
-   - Open your browser and navigate to `http://localhost:5050`
-   - Log in using the email and password you set in the `.env` file
-   - Connect to the PostgreSQL server using the credentials from your `.env` file
-     - Host: `postgres`
-     - Port: `5432`
-     - Username: Your `POSTGRES_USER`
-     - Password: Your `POSTGRES_PASSWORD`
-
-Now you're ready to run the analysis queries and explore the data job market insights!
 
 # The questions I wanted to answer through my SQL queries were:
 
